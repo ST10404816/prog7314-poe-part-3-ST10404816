@@ -43,7 +43,7 @@ fun SettingsScreen(nav: NavHostController) {
             ) {
                 Text(stringResource(R.string.biometric_unlock))
                 Switch(checked = biometrics, onCheckedChange = { biometrics = it })
-            )
+            }
         }
     }
 }
