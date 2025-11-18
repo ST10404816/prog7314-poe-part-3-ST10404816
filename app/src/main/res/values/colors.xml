@@ -1,0 +1,16 @@
+<resources>
+    <!-- Light mint green -->
+    <color name="thriftly_green">#A8E6A3</color>
+
+    <!-- Dark green -->
+    <color name="thriftly_dark">#2E7D32</color>
+
+    <!-- Soft coral/pink -->
+    <color name="thriftly_button">#F8B6A6</color>
+
+    <!-- White background -->
+    <color name="thriftly_background">#FFFFFF</color>
+
+    <!-- Black text -->
+    <color name="thriftly_text">#000000</color>
+</resources>

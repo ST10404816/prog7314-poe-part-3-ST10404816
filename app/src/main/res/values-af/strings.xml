@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Thriftly</string>
+    <string name="preferences">Voorkeure</string>
+    <string name="language">Taal</string>
+    <string name="edit_profile">Wysig profiel</string>
+    <string name="order_history">Bestelgeskiedenis</string>
+    <string name="delete_account">Verwyder rekening</string>
+    <string name="biometric_login">Biometriese aanmelding</string>
+    <string name="change_password">Verander wagwoord</string>
+    <string name="choose_language">Kies taal</string>
+    <string name="offers_and_orders">Aanbiedings &amp; Bestellings</string>
+    <string name="messages">Boodskappe</string>
+    <string name="general_updates">Algemene nuus</string>
+    <string name="delete_account_confirm_title">Verwyder rekening?</string>
+    <string name="delete_account_confirm_text">Dit is \'n mock-stroom. In \'n werklike bou sal dit u data verwyder.</string>
+    <string name="delete_account_title">Verwyder Rekening</string>
+    <string name="delete_account_warning">Is jy seker jy wil jou rekening verwyder? Hierdie aksie kan nie ongedaan gemaak word nie.</string>
+    <string name="edit_profile_title">Redigeer Profiel</string>
+    <string name="edit_name_label">Voer jou nuwe naam in:</string>
+    <string name="name">Naam</string>
+    <string name="save">Bewaar</string>
+    <string name="delete">Verwyder</string>
+    <string name="cancel">Kanselleer</string>
+    <string name="edit_profile_mock_toast">Profiel wysiging (mock)</string>
+
+    <!-- Language display names -->
+    <string name="lang_english">Engels</string>
+    <string name="lang_afrikaans">Afrikaans</string>
+    <string name="lang_zulu">Zulu</string>
+    <string name="placeholder_email">E-pos</string>
+    <string name="placeholder_password">Wagwoord</string>
+    <string name="toast_welcome_back">Welkom terug!</string>
+    <string name="toast_invalid_credentials">Ongeldige e-pos of wagwoord</string>
+    <string name="btn_login">Teken in</string>
+    <string name="login_with_fingerprint">Teken in met vingerafdruk</string>
+    <string name="no_account_sign_up">Het jy nie \'n rekening nie? Teken aan</string>
+    <string name="biometric_title">Thriftly</string>
+    <string name="biometric_subtitle">Teken in met vingerafdruk</string>
+    <string name="app_name_title">thriftly</string>
+    <string name="signup_title">Teken aan</string>
+    <string name="placeholder_full_name">Volle naam</string>
+    <string name="placeholder_confirm_password">Bevestig wagwoord</string>
+    <string name="toast_fill_all_fields">Volg asseblief al die velde korrek in</string>
+    <string name="welcome_name">Welkom, %1$s!</string>
+    <string name="already_have_account">Het jy al \'n rekening? Teken in</string>
+    <string name="tab_home">Tuis</string>
+    <string name="tab_sell">Verkoop</string>
+    <string name="tab_chat">Gesels</string>
+    <string name="tab_orders">Bestellings</string>
+    <string name="tab_profile">Profiel</string>
+    <string name="settings_title">Instellings</string>
+    <string name="dark_mode">Donker modus</string>
+    <string name="biometric_unlock">Biometriese ontsluiting</string>
+    <string name="login">Meld aan</string>
+    <string name="login_title">Meld aan</string>
+    <string name="continue_guest">Gaan voort as gas</string>
+    <string name="login_note">SSO &amp; biometrie kan later bygevoeg word.</string>
+    <string name="offline_actions_title">Werk offline</string>
+    <string name="action_label">Aksie</string>
+    <string name="add_offline_action">Voeg offline-aksie by</string>
+    <string name="sync_now">Sinkroniseer nou</string>
+    <string name="synced">(gesinchroniseer)</string>
+    <string name="pending">(hangende)</string>
+    <string name="create_listing_title">Skep \'n lys</string>
+    <string name="add_photo">Voeg foto by</string>
+    <string name="tap_to_add_photo">Tik om \'n foto by te voeg</string>
+    <string name="label_title">Titel</string>
+    <string name="label_description">Beskrywing</string>
+    <string name="label_category">Kategorie</string>
+    <string name="label_size">Grootte</string>
+    <string name="label_condition">Toestand</string>
+    <string name="label_price">Prys</string>
+    <string name="post_listing">Plaas lys</string>
+    <string name="enter_title_price">Voer \'n titel en prys in</string>
+    <string name="seller_you">Jy\'s</string>
+    <string name="chat_placeholder_message">Boodskap</string>
+    <string name="chat_sent">Gestuur</string>
+    <string name="chat_pending">Hangende</string>
+    <string name="chat_retry">Probeer weer</string>
+    <string name="chat_send">Stuur</string>
+    <!-- Added missing keys flagged by Lint -->
+    <string name="app_title">thriftly</string>
+    <string name="signup">Teken aan</string>
+    <string name="or">of</string>
+    <string name="continue_with_google">Gaan voort met Google</string>
+    <string name="logo_desc">Toep logo</string>
+    <string name="offline">Vanlyn</string>
+    <string name="search">Soek</string>
+    <string name="no_items_yet">Nog geen items</string>
+    <string name="add_first_listing">Voeg jou eerste lys by vanaf die + oortjie</string>
+    <string name="image_label">Beeld</string>
+    <string name="listing">Lys</string>
+    <string name="back">Terug</string>
+    <string name="listing_not_found">Lys nie gevind nie</string>
+    <string name="orders_title">Bestellings</string>
+    <string name="tab_all">Alles</string>
+    <string name="tab_active">Aktief</string>
+    <string name="tab_completed">Voltooi</string>
+    <string name="no_orders_yet">Nog geen bestellings</string>
+    <string name="img_label">Img</string>
+    <string name="mark_as_shipped">Merk as versend</string>
+    <string name="confirm_delivery">Bevestig aflewering</string>
+    <string name="complete">Voltooi</string>
+    <string name="completed">Voltooi</string>
+    <string name="status_processing">Verwerking</string>
+    <string name="status_shipped">Versend</string>
+    <string name="status_delivered">Afgelewer</string>
+    <string name="status_completed">Voltooi</string>
+    
+    <!-- Additional features and improvements -->
+    <string name="ok">GOED</string>
+    <string name="done">Klaar</string>
+    <string name="retry">Probeer weer</string>
+    <string name="refresh">Verfris</string>
+    <string name="loading">Laai…</string>
+    <string name="error">Fout</string>
+    <string name="email">E-pos</string>
+    <string name="password">Wagwoord</string>
+    <string name="confirm_password">Bevestig wagwoord</string>
+    <string name="full_name">Volle naam</string>
+    <string name="create_account">Skep rekening</string>
+    <string name="welcome_title">Welkom by Thriftly!</string>
+    <string name="welcome_subtitle">Jou kans om mooi klere te vind teen lae pryse</string>
+    
+    <!-- Wishlist functionality -->
+    <string name="tab_wishlist">Verlanglyste</string>
+    <string name="wishlist_title">Verlanglyste</string>
+    <string name="add_to_wishlist">Voeg by verlanglyste</string>
+    <string name="remove_from_wishlist">Verwyder van verlanglyste</string>
+    <string name="wishlist_empty_title">Jou verlanglyste is leeg</string>
+    <string name="wishlist_empty_message">Begin deur die hartjie-ikone te gebruik om items wat jy hou van te stoor</string>
+    <string name="wishlist_settings">Verlanglyste-instellings</string>
+    <string name="price_drop_notifications">Prysverlagiing-kennisgewings</string>
+    <string name="daily_digest">Daaglikse opsomming</string>
+    <string name="check_frequency">Kontrole frekwensie</string>
+    <string name="set_price_alert">Stel prys-waarskuwing</string>
+    <string name="target_price">Teikenprys</string>
+    <string name="price_history">Prysgeskiedenis</string>
+    <string name="browse_listings">Blaai deur lyste</string>
+    <string name="refresh_prices">Verfris pryse</string>
+    <string name="sort_by">Sorteer volgens</string>
+    <string name="filter_by_category">Filter volgens kategorie</string>
+    <string name="all_categories">Alle kategorieë</string>
+    <string name="clear_filter">Maak filter skoon</string>
+    <string name="added_ago">%s gelede bygevoeg</string>
+    <string name="price_dropped">Prys gedaal met %d%%</string>
+    
+    <!-- Marketplace features -->
+    <string name="seller_profile">Verkoperprofiel</string>
+    <string name="sold_by">Verkoop deur</string>
+    <string name="trusted_seller">Vertroude verkoper</string>
+    <string name="view_profile">Bekyk profiel</string>
+    <string name="message_seller">Boodskap verkoper</string>
+    <string name="make_offer">Maak aanbod</string>
+    <string name="buy_now">Koop nou</string>
+    <string name="reviews">Resensies</string>
+    <string name="no_reviews_yet">Nog geen resensies nie</string>
+    <string name="verified">Geverifieer</string>
+    <string name="member_since">Lid sedert %s</string>
+    <string name="offer_pending">Aanbod hangend</string>
+    <string name="offer_accepted">Aanbod aanvaar</string>
+    <string name="offer_declined">Aanbod afgewys</string>
+    <string name="offer_countered">Teenaanbod gemaak</string>
+    <string name="offer_expired">Aanbod verval</string>
+    <string name="make_an_offer">Maak \'n aanbod</string>
+    <string name="listed_price">Gelyste prys</string>
+    <string name="your_offer">Jou aanbod</string>
+    <string name="enter_amount">Voer bedrag in</string>
+    <string name="message_optional">Boodskap (Opsioneel)</string>
+    <string name="add_note_to_seller">Voeg nota vir verkoper by…</string>
+    <string name="submit_offer">Dien aanbod in</string>
+    <string name="percent_off">%d%% af van gelyste prys</string>
+    <string name="no_messages_yet">Nog geen boodskappe nie</string>
+    <string name="start_browsing">Begin blaai om met verkopers te verbind</string>
+    
+    <!-- Additional UI elements -->
+    <string name="create_listing">Skep lys</string>
+    <string name="title">Titel</string>
+    <string name="description">Beskrywing</string>
+    <string name="category">Kategorie</string>
+    <string name="condition">Toestand</string>
+    <string name="size">Grootte</string>
+    <string name="price">Prys</string>
+    <string name="images">Beelde</string>
+    <string name="add_images">Voeg beelde by</string>
+    <string name="search_placeholder">Soek klere</string>
+    <string name="type_message">Tik boodskap...</string>
+    <string name="send_message">Stuur boodskap</string>
+    <string name="just_now">Nou net</string>
+    
+    <!-- Validation errors -->
+    <string name="error_invalid_email">Voer asseblief \'n geldige e-pos in</string>
+    <string name="error_password_too_short">Wagwoord moet ten minste 6 karakters wees</string>
+    <string name="error_passwords_dont_match">Wagwoorde stem nie ooreen nie</string>
+    <string name="error_name_required">Naam is vereis</string>
+    <string name="error_email_required">E-pos is vereis</string>
+    <string name="error_password_required">Wagwoord is vereis</string>
+    <string name="error_title_required">Titel is vereis</string>
+    <string name="error_category_required">Kategorie is vereis</string>
+    <string name="error_price_required">Prys is vereis</string>
+    <string name="error_invalid_price">Ongeldige prys</string>
+    
+    <!-- Offline functionality -->
+    <string name="offline_mode_message">Jy is vanlyn. Aksies sal gestoor en gestuur word wanneer jy weer verbind.</string>
+    <string name="offline_indicator">Vanlyn modus aanduider</string>
+    <string name="actions_queued">Aksies in die ry: %d</string>
+    <string name="sync_success">Sinkronisasie suksesvol!</string>
+    <string name="sync_in_progress">Besig om te sinkroniseer…</string>
+    <string name="listing_saved_offline">Lys gestoor vanlyn. Dit sal gestuur word wanneer jy weer verbind.</string>
+    <string name="action_will_sync_later">Aksie sal later sinkroniseer wanneer jy weer verbind.</string>
+    
+    <!-- Accessibility and content descriptions -->
+    <string name="content_desc_wishlist">Verlanglyste knoppie</string>
+    <string name="content_desc_remove_wishlist">Verwyder van verlanglyste</string>
+    <string name="content_desc_seller_image">Verkoper beeld</string>
+    <string name="content_desc_product_image">Produk beeld</string>
+    <string name="content_desc_rating">Gradering: %s</string>
+    <string name="content_desc_back_button">Terug knoppie</string>
+    <string name="content_desc_search">Soek</string>
+    <string name="content_desc_filter">Filter lyste</string>
+    <string name="content_desc_sort">Sorteer lyste</string>
+    <string name="content_desc_notification">Kennisgewing</string>
+    <string name="content_desc_profile_menu">Profiel menu</string>
+    <string name="content_desc_send_message">Stuur boodskap</string>
+    <string name="content_desc_add_image">Voeg beeld by</string>
+    <string name="content_desc_loading">Laai inhoud</string>
+    <string name="content_desc_error">Fout vertoon</string>
+    
+    <!-- Fix some inconsistencies -->
+    <string name="dont_have_account">Het jy nie \'n rekening nie? Teken aan</string>
+</resources>

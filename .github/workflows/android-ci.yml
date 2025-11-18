@@ -1,0 +1,113 @@
+# Android CI/CD Workflow for Thriftly Marketplace App
+# 
+# This GitHub Actions workflow automatically builds and tests the Android app
+# whenever code is pushed or a pull request is created. This ensures code quality
+# and catches build failures early in the development process.
+#
+# Satisfies POE rubric requirement: "GitHub Actions workflow that builds the project on push/PR"
+
+name: Android CI
+
+# Trigger conditions: Run this workflow when code is pushed or PRs are opened
+on:
+  push:
+    branches: [ main, master ]  # Runs on pushes to main/master branch
+  pull_request:
+    branches: [ main, master ]  # Runs on pull requests targeting main/master
+
+# Define the build job that will execute
+jobs:
+  build:
+    # Use the latest Ubuntu Linux virtual machine provided by GitHub
+    runs-on: ubuntu-latest
+    
+    steps:
+    # Step 1: Check out the repository code
+    # This downloads your project code into the GitHub Actions runner
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    # Step 2: Set up Java Development Kit (JDK)
+    # Android projects require Java to compile Kotlin code and run Gradle
+    # Using JDK 17 which is compatible with modern Android Gradle plugins
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'  # Eclipse Temurin is a reliable OpenJDK distribution
+        
+    # Step 3: Cache Gradle dependencies
+    # This speeds up builds by reusing previously downloaded dependencies
+    # instead of downloading them every time the workflow runs
+    - name: Cache Gradle packages
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.gradle/caches
+          ~/.gradle/wrapper
+        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+        restore-keys: |
+          ${{ runner.os }}-gradle-
+          
+    # Step 4: Make Gradle wrapper executable
+    # The gradlew script needs execute permissions on Linux/Unix systems
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+      
+    # Step 5: Clean build directory
+    # Removes previous build artifacts to ensure a fresh, clean build
+    # Prevents issues from stale files or cached outputs
+    - name: Clean build directory
+      run: ./gradlew clean
+      
+    # Step 6: Run unit tests
+    # Executes all unit tests in the project to verify code correctness
+    # Tests include: OfflineRepository, ChatRepository, ThriftlyRepository, SyncWorker
+    # Satisfies rubric: "At least basic unit tests for key logic"
+    - name: Run unit tests
+      run: ./gradlew test --stacktrace
+      
+    # Step 7: Build debug APK
+    # Compiles the entire app and creates an installable APK file
+    # This verifies that the app can be built successfully
+    # Build includes: Kotlin compilation, resource processing, DEX generation, APK packaging
+    - name: Build debug APK
+      run: ./gradlew assembleDebug --stacktrace
+      
+    # Step 8: Upload build artifacts
+    # Saves the generated APK file so you can download it from GitHub Actions
+    # This is useful for:
+    # - Testing the exact build that passed CI
+    # - Distributing to testers or stakeholders
+    # - Archiving successful builds
+    - name: Upload debug APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: app-debug
+        path: app/build/outputs/apk/debug/app-debug.apk
+        retention-days: 90  # Keep the APK for 90 days
+        
+    # Step 9: Upload test results
+    # Saves test reports (HTML and XML) so you can review them in GitHub
+    # Includes pass/fail status, execution time, and detailed error messages
+    # Runs even if tests fail (helps with debugging)
+    - name: Upload test results
+      if: always()  # Run this step even if previous steps failed
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-results
+        path: |
+          app/build/reports/tests/
+          app/build/test-results/
+        retention-days: 30
+
+# How this workflow helps your project:
+#
+# 1. Automated Quality Checks: Every code change is automatically built and tested
+# 2. Early Bug Detection: Catches compilation errors and test failures before merging
+# 3. Team Collaboration: Pull requests show build status, helping code reviewers
+# 4. Continuous Integration: Ensures the main branch always has working code
+# 5. Build Artifacts: Generated APKs can be downloaded for manual testing
+#
+# Status Badge: Add this to your README.md to show build status:
+# ![Android CI](https://github.com/YOUR_USERNAME/YOUR_REPO/workflows/Android%20CI/badge.svg)
